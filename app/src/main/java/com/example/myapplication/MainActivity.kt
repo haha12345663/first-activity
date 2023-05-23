@@ -9,8 +9,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.engine.DiskCacheStrategy
 
 class MainActivity : AppCompatActivity() {
     private lateinit var img: ImageView
@@ -20,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
        // Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
-        Log.d("Get new Data","onCreate");
+       /* Log.d("Get new Data","onCreate");
         btn = findViewById(R.id.button2)
         btn.setOnClickListener{
-            val intent = Intent(this, Screen2::class.java)
+            val intent = Intent(this, FirstFragment::class.java)
             startActivity(intent)
         }
         btn = findViewById(R.id.button3)
@@ -31,10 +29,10 @@ class MainActivity : AppCompatActivity() {
             val intent2 = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.facebook.com/"))
             startActivity(intent2)
-        }
+        }*/
     }
 
-    override fun onStart() {
+    /*override fun onStart() {
         super.onStart()
         img = findViewById(R.id.imageView)
         Glide.with(this).load("https://source.unsplash.com/user/c_v_r")
@@ -60,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         super.onStop()
         Log.i("Get new Data","onStop");
 
-    }
+    }*/
 
     fun clickcc(cc: View) {
         Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show()
